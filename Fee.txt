@@ -1,3 +1,7 @@
+API EndPoints:
+--------------
+http://localhost:8087/api/fee/calculate
+
 Request:
 --------
 
