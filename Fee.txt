@@ -1,0 +1,31 @@
+Request:
+--------
+
+{
+    "toCountryCode":"91",
+    "amount":500,
+    "productSchema":"RTGS"
+
+}
+
+Response:
+---------
+{
+    "percentage": 0.04,
+    "feeAmount": 0.2,
+    "totalAmount": 500.2
+}
+
+SQl script for Database Table:
+------------------------------
+
+
+CREATE TABLE rules (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    to_country_code VARCHAR(10) NOT NULL,
+    min_amount DOUBLE NOT NULL,
+    max_amount DOUBLE NOT NULL,
+    percentage DOUBLE NOT NULL,
+    product_schema VARCHAR(100) NOT NULL
+);
+

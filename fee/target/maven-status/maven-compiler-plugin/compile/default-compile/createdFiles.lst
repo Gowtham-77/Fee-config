@@ -1,0 +1,7 @@
+com\core\io\fees\repository\RuleRepository.class
+com\core\io\fees\FeesApplication.class
+com\core\io\fees\dto\requestdto\FeeRequest.class
+com\core\io\fees\service\FeeService.class
+com\core\io\fees\controller\FeeController.class
+com\core\io\fees\entity\Rule.class
+com\core\io\fees\dto\responsedto\FeeResponse.class
