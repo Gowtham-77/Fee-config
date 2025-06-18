@@ -8,7 +8,7 @@ COPY fee/pom.xml .
 RUN mvn dependency:go-offline
 
 COPY . .
-RUN mvn clean package -DskipTests
+RUN mvn -e -X clean package -DskipTests
 
 # Stage 2: Run the application with Java 17 JRE
 FROM eclipse-temurin:17-jre
