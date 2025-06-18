@@ -4,7 +4,7 @@ FROM maven:3.9.6-eclipse-temurin-17 AS builder
 WORKDIR /app
 
 # Copy the Maven project files
-COPY pom.xml .
+COPY fee/pom.xml .
 RUN mvn dependency:go-offline
 
 COPY . .
